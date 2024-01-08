@@ -2,5 +2,6 @@ function setup() {
   createCanvas(400, 400);
 }
 function draw() {
-  circle(100, 100, 100);
+  background(0);
+  circle(100, 100);
 }
