@@ -20,11 +20,12 @@ import Button from "../components/Button.astro";
 	<body>
 		<div class="grid place-items-center h-screen content-center">
 			<Button>Click this!</Button>
-			<Button>Button two</Button>
 			<a href="/markdown-page" class="p-4 underline"
 				>Markdown is also supported...</a
 			>
 		</div>
-		<script src="/components/script.js"></script>
+		<script is:inline>
+			src = "is:inline/components/script.js";
+		</script>
 	</body>
 </html>
