@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
+import Button from "../components/Button.astro";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -13,12 +13,18 @@ import Button from '../components/Button.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro + TailwindCSS</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"
+		></script>
 	</head>
 
 	<body>
 		<div class="grid place-items-center h-screen content-center">
 			<Button>Click this!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+			<Button>Button two</Button>
+			<a href="/markdown-page" class="p-4 underline"
+				>Markdown is also supported...</a
+			>
 		</div>
+		<script src="/components/script.js"></script>
 	</body>
 </html>
